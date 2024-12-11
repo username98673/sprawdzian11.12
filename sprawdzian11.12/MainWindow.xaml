@@ -1,0 +1,25 @@
+﻿<Window x:Class="sprawdzian11._12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sprawdzian11._12"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock>ktore zdjecie </TextBlock>
+        <ComboBox x:Name="combobox_zdjecie" SelectedIndex="0">
+            <ComboBoxItem>zdjecie1</ComboBoxItem>
+            <ComboBoxItem>zdjecie2</ComboBoxItem>
+            <ComboBoxItem>zdjecie3</ComboBoxItem>
+            <ComboBoxItem>zdjecie4</ComboBoxItem>
+        </ComboBox>
+        <Button Margin="20" Click="Button_Click">POKAZ</Button>
+        <Image x:Name="obraz" Source="obrazik.jpg" Height="100" Width="100"></Image>
+        <TextBlock 
+            x:Name="liczbapolubienTextBlock">
+            0
+        </TextBlock>
+
+    </StackPanel>
+</Window>
